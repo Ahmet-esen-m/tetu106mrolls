@@ -1,0 +1,521 @@
+.body_class {
+  margin: 0;
+  background-color:rgb(250, 250, 250);
+}
+.HW {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 55px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 65px;
+  margin-left: 100px;
+}
+
+/* Gs */
+
+.Top_G_Left {
+  border-top-left-radius: 5px;
+}
+.Top_G_Right {
+  border-top-right-radius: 5px;
+}
+.Bottom_G_Left {
+  border-bottom-left-radius: 5px;
+}
+.Bottom_G_Right {
+  border-bottom-right-radius: 5px;
+}
+
+/* Item */
+
+.Item {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  margin-top: 60px;
+  margin-left: 100px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: white;
+  transition: box-shadow .25s ease-in-out;
+}
+.Item:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+.item_text {
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  height: 35px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+/* Part */
+
+.Parts {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.parts_div {
+  margin: 0px;
+  display: flex;
+}
+.part_div {
+  width: 115px;
+  height: 52px;
+  display: table;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.part_text {
+  border: none;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Noto Sans;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(100, 100, 100);
+}
+.text_box {
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(210,227,252);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+
+/* Value */
+
+.value_div {
+  width: 260px;
+  height: 60px;
+  display: table;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.value_box {
+  margin: 0;
+  padding: 0;
+  width: 155px; /* for value: 45px; */
+  height: 58px; /* for value: 55px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(210,227,252);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+.unit_box {
+  margin: 0;
+  padding: 0;
+  width: 24px; /* for m: 34px; */
+  height: 50px;
+  padding-left: 1px;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: rgb(210,227,252);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size:18px;
+  outline: none;
+  background-color: whitesmoke;
+}
+
+/* Solve Button */
+
+.solve_buttons {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  width:445px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+}
+.solve_buttons:hover {
+  background-color: rgb(210,227,252);
+  color: rgb(102,157,246);
+}
+.solve_buttons:active {
+  background-color: rgb(102,157,246);
+  color: whitesmoke;
+}
+
+/* Image */
+
+.image_div_1 {
+  width: 445px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.image_div_2 {
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.image_div_double {
+  width: 225px;
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.image_div_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.image {
+  border-radius: 5px;
+  width: 310px;
+}
+.image_2 {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Copy Button */
+
+.copy_buttons {
+  font-family: Noto Sans;
+  font-weight: 500;
+  width: 115px;
+  height: 52px;
+  border: none;
+  background-color: whitesmoke;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+}
+.copy_buttons:hover {
+  background-color: rgb(210,227,252);
+  color: rgb(102,157,246);
+}
+.copy_buttons:active {
+  background-color: rgb(102,157,246);
+  color: whitesmoke;
+}
+.hidden_box {
+  margin: 0px;
+  margin-left: 10px;
+  width: 35px;
+  padding-left: 27.5px;
+  padding-right: 27.5px;
+  display: inline-block;
+  font-family: Noto Sans;
+  font-weight: 400;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  border-radius: 5px;
+  border: none;  
+}
+
+/* Hidden Copy Boxes */
+
+#copy_1 {
+  visibility: hidden;
+}
+#copy_button_1:hover + #copy_1 {
+  visibility: visible;
+}
+#copy_2 {
+  visibility: hidden;
+}
+#copy_button_2:hover + #copy_2 {
+  visibility: visible;
+}
+#copy_3 {
+  visibility: hidden;
+}
+#copy_button_3:hover + #copy_3 {
+  visibility: visible;
+}
+#copy_4 {
+  visibility: hidden;
+}
+#copy_button_4:hover + #copy_4 {
+  visibility: visible;
+}
+#copy_5 {
+  visibility: hidden;
+}
+#copy_button_5:hover + #copy_5 {
+  visibility: visible;
+}
+#copy_6 {
+  visibility: hidden;
+}
+#copy_button_6:hover + #copy_6 {
+  visibility: visible;
+}
+#copy_7 {
+  visibility: hidden;
+}
+#copy_button_7:hover + #copy_7 {
+  visibility: visible;
+}
+#copy_8 {
+  visibility: hidden;
+}
+#copy_button_8:hover + #copy_8 {
+  visibility: visible;
+}
+#copy_9 {
+  visibility: hidden;
+}
+#copy_button_9:hover + #copy_9 {
+  visibility: visible;
+}
+#copy_a {
+  visibility: hidden;
+}
+#copy_button_a:hover + #copy_a {
+  visibility: visible;
+}
+#copy_b {
+  visibility: hidden;
+}
+#copy_button_b:hover + #copy_b {
+  visibility: visible;
+}
+#copy_c {
+  visibility: hidden;
+}
+#copy_button_c:hover + #copy_c {
+  visibility: visible;
+}
+#copy_d {
+  visibility: hidden;
+}
+#copy_button_d:hover + #copy_d {
+  visibility: visible;
+}
+#copy_e {
+  visibility: hidden;
+}
+#copy_button_e:hover + #copy_e {
+  visibility: visible;
+}
+#copy_f {
+  visibility: hidden;
+}
+#copy_button_f:hover + #copy_f {
+  visibility: visible;
+}
+#copy_g {
+  visibility: hidden;
+}
+#copy_button_g:hover + #copy_g {
+  visibility: visible;
+}
+#copy_h {
+  visibility: hidden;
+}
+#copy_button_h:hover + #copy_h {
+  visibility: visible;
+}
+#copy_i {
+  visibility: hidden;
+}
+#copy_button_i:hover + #copy_i {
+  visibility: visible;
+}
+#copy_j {
+  visibility: hidden;
+}
+#copy_button_j:hover + #copy_j {
+  visibility: visible;
+}
+#copy_k {
+  visibility: hidden;
+}
+#copy_button_k:hover + #copy_k {
+  visibility: visible;
+}
+#copy_l {
+  visibility: hidden;
+}
+#copy_button_l:hover + #copy_l {
+  visibility: visible;
+}
+#copy_m {
+  visibility: hidden;
+}
+#copy_button_m:hover + #copy_m {
+  visibility: visible;
+}
+#copy_n {
+  visibility: hidden;
+}
+#copy_button_n:hover + #copy_n {
+  visibility: visible;
+}
+#copy_o {
+  visibility: hidden;
+}
+#copy_button_o:hover + #copy_o {
+  visibility: visible;
+}
+#copy_p {
+  visibility: hidden;
+}
+#copy_button_p:hover + #copy_p {
+  visibility: visible;
+}
+#copy_r {
+  visibility: hidden;
+}
+#copy_button_r:hover + #copy_r {
+  visibility: visible;
+}
+#copy_s {
+  visibility: hidden;
+}
+#copy_button_s:hover + #copy_s {
+  visibility: visible;
+}
+#copy_t {
+  visibility: hidden;
+}
+#copy_button_t:hover + #copy_t {
+  visibility: visible;
+}
+#copy_u {
+  visibility: hidden;
+}
+#copy_button_u:hover + #copy_u {
+  visibility: visible;
+}
+#copy_v {
+  visibility: hidden;
+}
+#copy_button_v:hover + #copy_v {
+  visibility: visible;
+}
+#copy_y {
+  visibility: hidden;
+}
+#copy_button_y:hover + #copy_y {
+  visibility: visible;
+}
+#copy_z {
+  visibility: hidden;
+}
+#copy_button_z:hover + #copy_z {
+  visibility: visible;
+}
+#copy_α {
+  visibility: hidden;
+}
+#copy_button_α:hover + #copy_α {
+  visibility: visible;
+}
+#copy_β {
+  visibility: hidden;
+}
+#copy_button_β:hover + #copy_β {
+  visibility: visible;
+}
+#copy_γ {
+  visibility: hidden;
+}
+#copy_button_γ:hover + #copy_γ {
+  visibility: visible;
+}
+#copy_ε {
+  visibility: hidden;
+}
+#copy_button_ε:hover + #copy_ε {
+  visibility: visible;
+}
+#copy_ζ {
+  visibility: hidden;
+}
+#copy_button_ζ:hover + #copy_ζ {
+  visibility: visible;
+}
+#copy_η {
+  visibility: hidden;
+}
+#copy_button_η:hover + #copy_η {
+  visibility: visible;
+}
+#copy_θ {
+  visibility: hidden;
+}
+#copy_button_θ:hover + #copy_θ {
+  visibility: visible;
+}
+#copy_ρ {
+  visibility: hidden;
+}
+#copy_button_ρ:hover + #copy_ρ {
+  visibility: visible;
+}
+#copy_λ {
+  visibility: hidden;
+}
+#copy_button_λ:hover + #copy_λ {
+  visibility: visible;
+}
+#copy_μ {
+  visibility: hidden;
+}
+#copy_button_μ:hover + #copy_μ {
+  visibility: visible;
+}
+#copy_ξ {
+  visibility: hidden;
+}
+#copy_button_ξ:hover + #copy_ξ {
+  visibility: visible;
+}
+#copy_π {
+  visibility: hidden;
+}
+#copy_button_π:hover + #copy_π {
+  visibility: visible;
+}
