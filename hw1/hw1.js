@@ -283,7 +283,7 @@ function item11() {
   T = q*E*d
   T = T.toFixed(1)
 
-  W = dm*E*(1 - Math.cos(38*pi/180))
+  W = dm*E*(1 - Math.cos(tht*pi/180))
   W = W.toFixed(1)
 
   document.getElementById("itemb_part_a").value = q + "*10^-20 C"
