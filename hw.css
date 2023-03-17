@@ -14,21 +14,6 @@
   margin-left: 100px;
 }
 
-/* Gs */
-
-.Top_G_Left {
-  border-top-left-radius: 5px;
-}
-.Top_G_Right {
-  border-top-right-radius: 5px;
-}
-.Bottom_G_Left {
-  border-bottom-left-radius: 5px;
-}
-.Bottom_G_Right {
-  border-bottom-right-radius: 5px;
-}
-
 /* Item */
 
 .Item {
@@ -57,6 +42,21 @@
   font-size: 30px;
   margin-top: 25px;
   margin-left: 30px;
+}
+
+/* Gs */
+
+.Top_G_Left {
+  border-top-left-radius: 5px;
+}
+.Top_G_Right {
+  border-top-right-radius: 5px;
+}
+.Bottom_G_Left {
+  border-bottom-left-radius: 5px;
+}
+.Bottom_G_Right {
+  border-bottom-right-radius: 5px;
 }
 
 /* Part */
@@ -98,12 +98,12 @@
   padding-right: 15px;
   border-width: 0;
   border-bottom-width: 2px;
-  border-color: rgb(210,227,252);
   font-family: Noto Sans;
   font-weight: 400;
   font-size:18px;
   outline: none;
   background-color: whitesmoke;
+  border-color: var(--light_color);
 }
 
 /* Value */
@@ -124,12 +124,12 @@
   padding-right: 15px;
   border-width: 0;
   border-bottom-width: 2px;
-  border-color: rgb(210,227,252);
   font-family: Noto Sans;
   font-weight: 400;
   font-size:18px;
   outline: none;
   background-color: whitesmoke;
+  border-color: var(--light_color);
 }
 .unit_box {
   margin: 0;
@@ -139,12 +139,12 @@
   padding-left: 1px;
   border-width: 0;
   border-bottom-width: 2px;
-  border-color: rgb(210,227,252);
   font-family: Noto Sans;
   font-weight: 400;
   font-size:18px;
   outline: none;
   background-color: whitesmoke;
+  border-color: var(--light_color);
 }
 
 /* Solve Button */
@@ -165,11 +165,11 @@
   cursor: pointer;
 }
 .solve_buttons:hover {
-  background-color: rgb(210,227,252);
-  color: rgb(102,157,246);
+  background-color: var(--light_color);
+  color: var(--dark_color);
 }
 .solve_buttons:active {
-  background-color: rgb(102,157,246);
+  background-color: var(--dark_color);
   color: whitesmoke;
 }
 
@@ -231,11 +231,11 @@
   cursor: pointer;
 }
 .copy_buttons:hover {
-  background-color: rgb(210,227,252);
-  color: rgb(102,157,246);
+  background-color: var(--light_color);
+  color: var(--dark_color);
 }
 .copy_buttons:active {
-  background-color: rgb(102,157,246);
+  background-color: var(--dark_color);
   color: whitesmoke;
 }
 .hidden_box {
