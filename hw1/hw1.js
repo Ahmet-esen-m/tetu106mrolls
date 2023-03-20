@@ -13,6 +13,11 @@ function item1() {
   q3 = document.getElementById("item1_q3").value
   d = document.getElementById("item1_d").value
 
+  q1 = q1*10**-7
+  q2 = q2*10**-9
+  q3 = q3*10**-10
+  d = d*10**-3
+  
   k = 9*10**9
 
   f1 = -1*k*q1*q2/d**2
@@ -134,8 +139,19 @@ function item7() {
   EBY = EB1Y + EB2Y
   EB = Math.sqrt(EBX**2 + EBY**2)
 
-  EA = Math.round(EA/10**5)*10**5
-  EB = Math.round(EB/10**6)*10**6
+  if (EA >= 10**7) {
+    EA = Math.round(EA/10**6)*10**6
+  }
+  else {
+    EA = Math.round(EA/10**5)*10**5
+  }
+
+  if (EB >= 10**7) {
+    EB = Math.round(EB/10**6)*10**6
+  }
+  else {
+    EB = Math.round(EB/10**5)*10**5
+  }
 
   EB_tht = Math.atan(EBY/EBX)*180/pi
   EB_tht = EB_tht.toFixed(0)
@@ -174,8 +190,19 @@ function item8() {
   EX = Math.round(EX/100)*100
   EY = EY.toFixed(0)
 
-  rt1 = Math.round(rt1*1000)/1000
-  rt2 = Math.round(rt2*100)/100
+  if (rt1 <= -0.1 || rt1 >= 0.1) {
+    rt1 = Math.round(rt1*100)/100
+  }
+  else {
+    rt1 = Math.round(rt1*1000)/1000
+  }
+
+  if (rt2 <= -1 || rt2 >= 1) {
+    rt2 = Math.round(rt2*10)/10
+  }
+  else {
+    rt2 = Math.round(rt2*100)/100
+  }
 
   document.getElementById("item8_part_a").value = EX + " ," + EY
   document.getElementById("item8_part_b").value = rt1 + " ," + rt2
@@ -204,13 +231,12 @@ function item9() {
   vy = v0 + ay*t
   tht = 90 + Math.atan(vy/vx)*180/pi
 
-  ax = Math.round(ax/10**14)*10**14
-  ay = Math.round(ay/10**15)*10**15
+  ax = (Math.round(ax/10**14)*10**14/10).toFixed(1)
+  ay = (Math.round(ay/10**15)*10**15/10).toFixed(1)
 
-  //tht = tht.toFixed(0)
   tht = Math.round(tht/10)*10
 
-  document.getElementById("item9_part_a").value = ax + " ," + ay
+  document.getElementById("item9_part_a").value = ax + "*10^15," + ay + "*10^16"
   document.getElementById("item9_part_b").value = tht
 }
 
@@ -256,16 +282,23 @@ function item11() {
   q = dm*d
 
   T = q*E*d
-  T = T.toFixed(1)
+  if (T >= 10) {
+    T = T/10
+    T = T.toFixed(1)
+    document.getElementById("itemb_part_c").value = T + "*10^-25 N*m"
+    document.getElementById("itemb_part_c").name = T + "*10^-25"
+  }
+  else {
+    T = T.toFixed(1)
+    document.getElementById("itemb_part_c").value = T + "*10^-26 N*m"
+    document.getElementById("itemb_part_c").name = T + "*10^-26"
+  }
 
   W = dm*E*(1 - Math.cos(tht*pi/180))
   W = W.toFixed(1)
 
   document.getElementById("itemb_part_a").value = q + "*10^-20 C"
   document.getElementById("itemb_part_a").name = q + "*10^-20"
-
-  document.getElementById("itemb_part_c").value = T + "*10^-26 N*m"
-  document.getElementById("itemb_part_c").name = T + "*10^-26"
 
   document.getElementById("itemb_part_d").value = W + "*10^-26 J"
   document.getElementById("itemb_part_d").name = W + "*10^-26"
