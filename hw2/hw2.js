@@ -1,5 +1,5 @@
 function textbox_underline(box) {
-  document.getElementById(box.id).style.borderColor = "rgb(64,255,255)"
+  document.getElementById(box.id).style.borderColor = "rgb( 64,255,255)"
 }
 function textbox_default(box) {
   document.getElementById(box.id).style.borderColor = "rgb(204,255,255)"
