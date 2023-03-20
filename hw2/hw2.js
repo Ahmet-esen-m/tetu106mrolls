@@ -16,9 +16,16 @@ function item5() {
 
   Q = eps*A*(E25 - E0)
   Q = Q*10**7
-  Q = Q.toFixed(1)
-
-  document.getElementById("item5_part_a").value = Q + "*10^-7"
+  
+  if (Q <= -9.5) {
+    Q = Q/10
+    Q = Q.toFixed(1)
+    document.getElementById("item5_part_a").value = Q + "*10^-6"
+  }
+  else {
+    Q = Q.toFixed(1)
+    document.getElementById("item5_part_a").value = Q + "*10^-7"
+  }
 }
 
 function item6() {
