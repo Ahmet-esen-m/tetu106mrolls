@@ -90,9 +90,14 @@ function item5() {
   f2 = 0.5*k*q*q/a**2
 
   F = f1 - f2
-  F = Math.round(F/10**5)*10**5
-
-  document.getElementById("item5_part_a").value = F + " ," + F + " ," + F + " ," + F
+  if (F >= 10**7) {
+    F = (Math.round(F/10**5)/100).toFixed(2)
+    document.getElementById("item5_part_a").value = F + "*10^7 ," + F + "*10^7 ," + F + "*10^7 ," + F + "*10^7"
+  }
+  else {
+    F = (Math.round(F/10**4)/100).toFixed(2)
+    document.getElementById("item5_part_a").value = F + "*10^6 ," + F + "*10^6 ," + F + "*10^6 ," + F + "*10^6"
+  }
 }
 
 function item6() {
