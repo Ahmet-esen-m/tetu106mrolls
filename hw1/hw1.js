@@ -219,8 +219,6 @@ function item9() {
   ei = parseFloat(document.getElementById("item9_ei").value)
   ej = parseFloat(document.getElementById("item9_ej").value)
   t = parseFloat(document.getElementById("item9_t").value)
-  
-  v0 = v0*10**6
 
   t = t*0.1**9
 
@@ -252,6 +250,8 @@ function item10() {
   v0 = parseFloat(document.getElementById("itema_v0").value)
   l = parseFloat(document.getElementById("itema_l").value)
   E = parseFloat(document.getElementById("itema_E").value)
+  
+  v0 = v0*10**6
 
   l = l/100
 
@@ -317,7 +317,8 @@ function item12() {
   q2 = parseFloat(document.getElementById("itemc_q2").value)
   x = parseFloat(document.getElementById("itemc_x").value)
 
-  q2 = -1*q2
+  q1 = q1*10**-5
+  q2 = -1*q2*10**-6
 
   d = Math.sqrt(q2)*x/(Math.sqrt(q1) - Math.sqrt(q2))
   d = d.toFixed(1)
