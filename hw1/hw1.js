@@ -236,8 +236,8 @@ function item9() {
   vy = v0 + ay*t
   tht = 90 + Math.atan(vy/vx)*180/pi
 
-  ax = (Math.round(ax/10**14)*10**14/10).toFixed(1)
-  ay = (Math.round(ay/10**15)*10**15/10).toFixed(1)
+  ax = (Math.round(ax/10**14)/10).toFixed(1)
+  ay = (Math.round(ay/10**15)/10).toFixed(1)
 
   tht = Math.round(tht/10)*10
 
