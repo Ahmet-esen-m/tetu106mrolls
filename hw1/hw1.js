@@ -219,6 +219,8 @@ function item9() {
   ei = parseFloat(document.getElementById("item9_ei").value)
   ej = parseFloat(document.getElementById("item9_ej").value)
   t = parseFloat(document.getElementById("item9_t").value)
+  
+  v0 = v0*10**6
 
   t = t*0.1**9
 
