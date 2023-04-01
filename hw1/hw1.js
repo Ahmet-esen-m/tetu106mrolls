@@ -1,8 +1,8 @@
 function textbox_underline(box) {
-  document.getElementById(box.id).style.borderColor = "rgb( 64,255,159)"
+  document.getElementById(box.id).style.borderColor = "rgb( 54,217,135)"
 }
 function textbox_default(box) {
-  document.getElementById(box.id).style.borderColor = "rgb(204,255,230)"
+  document.getElementById(box.id).style.borderColor = "rgb(194,242,218)"
 }
     
 /* ITEMS */
