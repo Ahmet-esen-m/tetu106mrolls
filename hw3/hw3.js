@@ -160,7 +160,6 @@ function item12() {
   k = 8.99*10**9
 
   V = k*q/r
-  V = Math.round(V/10)*10
   if (V > 1000) {
     V = Math.round(V/100)*100
   }
