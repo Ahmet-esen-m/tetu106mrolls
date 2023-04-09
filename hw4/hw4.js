@@ -165,38 +165,6 @@ function item9() {
 
 }
 
-function item10() {
-  A = parseFloat(document.getElementById("itema_A").value)
-  d1 = parseFloat(document.getElementById("itema_d1").value)
-  V = parseFloat(document.getElementById("itema_V").value)
-  d2 = parseFloat(document.getElementById("itema_d2").value)
-
-  A = A/(10**4)
-  d1 = d1/(10**3)
-  d2 = d2/(10**3)
-
-  eps = 8.85*0.1**12
-
-  Q1 = eps*A*V/d1
-  Q1 = Math.round((Q1*10**12)/10)*10
-
-  Q2 = eps*A*V/d2
-
-  C = eps*A/d2
-  V = Q2/C
-
-  W = Q2*V/2
-
-  Q2 = Math.round((Q2*10**12))
-  W = (W*10**9).toFixed(1)
-
-  document.getElementById("itema_part_a").value = Q1
-  document.getElementById("itema_part_b").value = Q2
-  document.getElementById("itema_part_c").value = V
-  document.getElementById("itema_part_d").value = W + "*10^-9"
-
-}
-
 function item11() {
   C1 = parseFloat(document.getElementById("itemb_C1").value)
   C2 = parseFloat(document.getElementById("itemb_C2").value)
