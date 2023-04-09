@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HW 4</title>
+    <link rel="icon" href="images/IvanTheTerrible.png">
+    <style>
+      :root { --light_color: rgb(194,230,242); --dark_color: rgb( 54,176,217) }
+    </style>
+    <link rel="stylesheet" href="../hw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <script type = "text/javascript" src="../hw.js"></script>
+  <script type = "text/javascript" src="hw4.js"></script>
+  <body class="body_class">
+    <h1 class="HW">HW-4</h1>
+    <div class="Item" style="height: 950px;"> <!-- Item 1 -->
+      <h2 class="item_text">Item 1</h2>
+      <div class="Parts">
+        <div class="image_div_1" style="height: 140px;">
+          <div class="part_div">
+            <p class="part_text">Part A : </p>
+          </div>
+          <img src="images/item1_partA.png" class="image">
+        </div>
+        <div class="image_div_1" style="height: 160px;">
+          <div class="part_div">
+            <p class="part_text">Part B : </p>
+          </div>
+          <img src="images/item1_partB.png" class="image">
+        </div>
+        <div class="image_div_1" style="height: 270px;">
+          <div class="part_div">
+            <p class="part_text">Part C : </p>
+          </div>
+          <img src="images/item1_partC.png" class="image">
+        </div>
+        <div class="image_div_1" style="height: 210px;">
+          <div class="part_div">
+            <p class="part_text">Part D : </p>
+          </div>
+          <img src="images/item1_partD.png" class="image">
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 215px;"> <!-- Item 2 -->
+      <h2 class="item_text">Item 2</h2>
+      <div class="Parts">
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part A : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item2_partA.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_1" name="item2_part_a copy_1" value="@DIV{1;K+1}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_1" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 675px;"> <!-- Item 3 -->
+      <h2 class="item_text">Item 3</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">A (cm<Sup>2</Sup>) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="item3_A" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">d (mm) : </p>
+          </div>
+          <input class="value_box" type="number" id="item3_d" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">k : </p>
+          </div>
+          <input class="value_box" type="number" id="item3_k" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">V : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="item3_V" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item3()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="item3_part_a" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_2" name="item3_part_a copy_2">Copy</button>
+          <input class="hidden_box" id="copy_2" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="item3_part_b" value=0 disabled="disabled">
+          <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_3" name="item3_part_b copy_3">Copy</button>
+          <input class="hidden_box" id="copy_3" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div">
+            <p class="part_text">Part C : </p>
+          </div>
+          <input class="text_box" type="text" id="item3_part_c" value=0 disabled="disabled">
+          <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_4" name="item3_part_c copy_4">Copy</button>
+          <input class="hidden_box" id="copy_4" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left">
+            <p class="part_text">Part D : </p>
+          </div>
+          <input class="text_box" type="text" id="item3_part_d" value=0 disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_5" name="item3_part_d copy_5">Copy</button>
+          <input class="hidden_box" id="copy_5" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 455px;"> <!-- Item 4 -->
+      <h2 class="item_text">Item 4</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">C<sub>1</sub> (&mu;F) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="item4_C1" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">V<sub>1</sub> : </p>
+          </div>
+          <input class="value_box" type="number" id="item4_V1" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">V<sub>2</sub> : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="item4_V2" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item4()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left Bottom_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="item4_part_a" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_6" name="item4_part_a copy_6">Copy</button>
+          <input class="hidden_box" id="copy_6" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 665px;"> <!-- Item 5 -->
+      <h2 class="item_text">Item 5</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">A (mm<Sup>2</Sup>) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="item5_A" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">C<sub>min</sub> (pF) : </p>
+          </div>
+          <input class="value_box" type="number" id="item5_Cmin" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div><div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">C<sub>max</sub> (pF) : </p>
+          </div>
+          <input class="value_box" type="number" id="item5_Cmax" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">Accuracy (pF)  : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="item5_Ac" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item5()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left Bottom_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="item5_part_a" value="0" name=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_7" name="item5_part_a copy_7">Copy</button>
+          <input class="hidden_box" id="copy_7" value="Copy"/>
+        </div>
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part B : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item5_partB.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_8" name="item5_part_b copy_8" value="@DIV{x@Sup{2}\\DeltaC;\\epsilon@Sub{0}A}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_8" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left Top_G_Left">
+            <p class="part_text">Part C : </p>
+          </div>
+          <input class="text_box" type="text" id="item5_part_c" value=0 disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right Top_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_9" name="item5_part_c copy_9">Copy</button>
+          <input class="hidden_box" id="copy_9" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 670px;"> <!-- Item 6 -->
+      <h2 class="item_text">Item 6</h2>
+      <div class="Parts">
+        <div class="image_div_1" style="height: 140px;">
+          <div class="part_div">
+            <p class="part_text">Part A : </p>
+          </div>
+          <img src="images/item6_partA.png" class="image">
+        </div>
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part B : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item6_partB.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_a" name="item6_part_b copy_a" value="\\epsilon@Sub{0}A@DIV{d@Sub{1} + d@Sub{2};d@Sub{1}d@Sub{2}}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_a" value="Copy"/>
+        </div>
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part C : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item6_partC.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_b" name="item6_part_c copy_b" value="\\epsilon@Sub{0}A@DIV{4;d@Sub{1} + d@Sub{2}}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_b" value="Copy"/>
+        </div>
+        <div class="image_div_1" style="height: 210px;">
+          <div class="part_div">
+            <p class="part_text">Part D : </p>
+          </div>
+          <img src="images/item6_partD.png" class="image">
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 585px;"> <!-- Item 7 -->
+      <h2 class="item_text">Item 7</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">C<sub>4</sub> (&mu;F) (Part C) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="item7_C4" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">C<sub>5</sub> (&mu;F) (Part C) : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="item7_C5" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item7()">Solve</button>
+      <div class="Parts">
+        <div class="image_div_1" style="height: 170px;">
+          <div class="part_div">
+            <p class="part_text">Part A : </p>
+          </div>
+          <img src="images/item7_partA.png" class="image">
+        </div>
+        <div class="parts_div">
+          <div class="part_div Top_G_Left Bottom_G_Left">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="item7_part_b" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_c" name="item7_part_b copy_c">Copy</button>
+          <input class="hidden_box" id="copy_c" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 335px;"> <!-- Item 8 -->
+      <h2 class="item_text">Item 8</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left Bottom_G_Left">
+            <p class="part_text">Energy is __ times greater : </p>
+          </div>
+          <input class="value_box Top_G_Right Bottom_G_Right" type="number" id="item8_tg" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item8()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left Bottom_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="item8_part_a" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_d" name="item8_part_a copy_d">Copy</button>
+          <input class="hidden_box" id="copy_d" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 725px;"> <!-- Item 9 -->
+      <h2 class="item_text">Item 9</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">l (Part B) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="item9_l" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">R<sub>a</sub> (mm) (Part B) : </p>
+          </div>
+          <input class="value_box" type="number" id="item9_Ra" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div><div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">R<sub>b</sub> (mm) (Part B) : </p>
+          </div>
+          <input class="value_box" type="number" id="item9_Rb" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">K<sub>liq</sub> (Part B) : </p>
+          </div>
+          <input class="value_box" type="number" id="item9_Kliq" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">K<sub>V</sub> (Part B) : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="item9_Kv" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item9()">Solve</button>
+      <div class="Parts">
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part A : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item9_partA.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_g" name="item9_part_a copy_g" value="@DIV{1;K@Sub{liq}-K@Sub{V}}(@DIV{Cln(@DIV{R@Sub{a};R@Sub{b}});2\\pi\\epsilon@Sub{0}l}-K@Sub{V})">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_g" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Top_G_Left">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="item9_part_b" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_e" name="item9_part_b copy_e">Copy</button>
+          <input class="hidden_box" id="copy_e" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left">
+            <p class="part_text">Part C : </p>
+          </div>
+          <input class="text_box" type="text" id="item9_part_c" value=0 disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_f" name="item9_part_c copy_f">Copy</button>
+          <input class="hidden_box" id="copy_f" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 675px;"> <!-- Item 10 -->
+      <h2 class="item_text">Item 10</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">A (cm<Sup>2</Sup>) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="itema_A" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">d (mm) : </p>
+          </div>
+          <input class="value_box" type="number" id="itema_d1" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">V : </p>
+          </div>
+          <input class="value_box" type="number" id="itema_V" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">d (mm) (Part B) : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="itema_d2" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item10()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="itema_part_a" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_h" name="itema_part_a copy_h">Copy</button>
+          <input class="hidden_box" id="copy_h" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="itema_part_b" value=0 disabled="disabled">
+          <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_i" name="itema_part_b copy_i">Copy</button>
+          <input class="hidden_box" id="copy_i" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div">
+            <p class="part_text">Part C : </p>
+          </div>
+          <input class="text_box" type="text" id="itema_part_c" value=0 disabled="disabled">
+          <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_j" name="itema_part_c copy_j">Copy</button>
+          <input class="hidden_box" id="copy_j" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left">
+            <p class="part_text">Part D : </p>
+          </div>
+          <input class="text_box" type="text" id="itema_part_d" value=0 disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_k" name="itema_part_d copy_k">Copy</button>
+          <input class="hidden_box" id="copy_k" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 570px;"> <!-- Item 11 -->
+      <h2 class="item_text">Item 11</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="value_div Top_G_Left">
+            <p class="part_text">C<sub>1</sub> (&mu;F) : </p>
+          </div>
+          <input class="value_box Top_G_Right" type="number" id="itemb_C1" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">C<sub>2</sub> (&mu;F) : </p>
+          </div>
+          <input class="value_box" type="number" id="itemb_C2" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div">
+            <p class="part_text">C<sub>3</sub> (&mu;F) : </p>
+          </div>
+          <input class="value_box" type="number" id="itemb_C3" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+        <div class="parts_div">
+          <div class="value_div Bottom_G_Left">
+            <p class="part_text">V<sub>ab</sub> : </p>
+          </div>
+          <input class="value_box Bottom_G_Right" type="number" id="itemb_Vab" placeholder=0 onblur="textbox_default(this)" onclick="textbox_underline(this)">
+        </div>
+      </div>
+      <button class="solve_buttons" onclick="item11()">Solve</button>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="itemb_part_a" value=0 disabled="disabled">
+          <button class="copy_buttons Top_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_l" name="itemb_part_a copy_l">Copy</button>
+          <input class="hidden_box" id="copy_l" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="itemb_part_b" value=0 disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy(this); copied(this);" id="copy_button_m" name="itemb_part_b copy_m">Copy</button>
+          <input class="hidden_box" id="copy_m" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 215px;"> <!-- Item 12 -->
+      <h2 class="item_text">Item 12</h2>
+      <div class="Parts">
+        <div class="image_div_2">
+          <div class="part_div Top_G_Left Bottom_G_Left" style="height: 75px; width: 105px;">
+            <p class="part_text">Part A : </p>
+          </div>
+          <div class="image_div_double">
+            <img src="images/item12_partA.png" class="image_2">
+          </div>
+          <button class="copy_buttons Top_G_Right Bottom_G_Right" style="height: 75px;" onmouseout="copy_default(this)" onclick="copy_directly(this); copied(this);" id="copy_button_n" name="itemc_part_a copy_n" value="@DIV{2\\pi\\epsilon@Sub{0};ln(@DIV{R@Sub{a}R@Sub{c};R@Sub{b}R@Sub{d}})}">Copy</button>
+          <input class="hidden_box" style="height: 75px;" id="copy_n" value="Copy"/>
+        </div>
+      </div>
+    </div>
+    <div class="Item" style="height: 290px; margin-bottom: 120px;"> <!-- Item 13 -->
+      <h2 class="item_text">Item 13</h2>
+      <div class="Parts">
+        <div class="parts_div">
+          <div class="part_div Top_G_Left">
+            <p class="part_text">Part A : </p>
+          </div>
+          <input class="text_box" type="text" id="itemd_part_a" value="4*10^-7 C" name="4*10^-7" disabled="disabled">
+          <button class="copy_buttons Top_G_Right" onmouseout="copy_default(this)" onclick="copy_name(this); copied(this);" id="copy_button_o" name="itemd_part_a copy_o">Copy</button>
+          <input class="hidden_box" id="copy_o" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div">
+            <p class="part_text">Part B : </p>
+          </div>
+          <input class="text_box" type="text" id="itemd_part_b" value="1*10^-10 F" name="1*10^-10" disabled="disabled">
+          <button class="copy_buttons" onmouseout="copy_default(this)" onclick="copy_name(this); copied(this);" id="copy_button_p" name="itemd_part_b copy_p">Copy</button>
+          <input class="hidden_box" id="copy_p" value="Copy"/>
+        </div>
+        <div class="parts_div">
+          <div class="part_div Bottom_G_Left">
+            <p class="part_text">Part C : </p>
+          </div>
+          <input class="text_box" type="text" id="itemd_part_c" value="4000 V" name="4000" disabled="disabled">
+          <button class="copy_buttons Bottom_G_Right" onmouseout="copy_default(this)" onclick="copy_name(this); copied(this);" id="copy_button_r" name="itemd_part_c copy_r">Copy</button>
+          <input class="hidden_box" id="copy_r" value="Copy"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
