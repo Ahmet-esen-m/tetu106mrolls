@@ -99,7 +99,7 @@ function item5() {
   F2 = 100*Xmax*Ac/(eps*A)
 
   Xmin = (Xmin*10**6)
-  Xmax = (Xmax*10**6).toFixed(0)
+  Xmax = (Xmax*10**6)
   if (Xmin > 0.1) {
     Xmin = Xmin.toFixed(2)
     Xmax = Math.round(Xmax/10)*10
