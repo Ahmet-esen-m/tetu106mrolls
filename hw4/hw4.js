@@ -119,12 +119,11 @@ function item5() {
 }
 
 function item7() {
+  C1 = parseFloat(document.getElementById("item7_C1").value)
+  C2 = parseFloat(document.getElementById("item7_C2").value)
+  C3 = parseFloat(document.getElementById("item7_C3").value)
   C4 = parseFloat(document.getElementById("item7_C4").value)
   C5 = parseFloat(document.getElementById("item7_C5").value)
-
-  C1 = C4
-  C2 = C5
-  C3 = C5
 
   C = (C1*(C2*(C3 + C4 + C5) + C5*(C3 + C4)) + C4*(C2*C3 + C2*C5 + C3*C5))/(C1*(C3 + C4 + C5) + C2*(C3 + C4 + C5) + C3*(C4 + C5))
 
