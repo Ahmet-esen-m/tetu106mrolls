@@ -106,7 +106,7 @@ function item5() {
   }
   else {
     Xmin = Xmin.toFixed(3)
-    Xmax = (Xmax*10**6).toFixed(0)
+    Xmax = Xmax.toFixed(0)
   }
   
 
