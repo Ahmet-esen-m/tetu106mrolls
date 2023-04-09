@@ -183,7 +183,14 @@ function item10() {
 
   Q = Math.round((Q*10**12)/10)*10
   V2 = V2.toFixed(0)
-  W = (W*10**9).toFixed(1)
+  W = (W*10**9)
+  
+  if (W < 1) {
+    W = W.toFixed(2)
+  }
+  else {
+    W = W.toFixed(1)
+  }
 
   document.getElementById("itema_part_a").value = Q
   document.getElementById("itema_part_b").value = Q
