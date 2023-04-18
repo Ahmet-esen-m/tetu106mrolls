@@ -14,7 +14,7 @@
 .Item {
   margin: 0;
   padding: 0;
-  width: 805px;
+  width: 806.5px;
   height: 330px;
   margin-top: 60px;
   border-style: solid;
@@ -40,6 +40,7 @@
   cursor: pointer;
   margin-top: 15px;
   margin-left: 15px;
+  padding: 0px;
 }
 .center {
   display: flex;
@@ -48,6 +49,11 @@
 .image {
   border-radius: 5px;
   transition: box-shadow .25s ease-in-out;
+}
+.image_shrink {
+  border-radius: 5px;
+  transition: box-shadow .25s ease-in-out;
+  width: 425px;
 }
 .image:hover {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5),
